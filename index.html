@@ -10,7 +10,7 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li style="float: left;"><h1>Welcome to my portfolio</h1></li>
+                    <li style="float: left;"><h1 id="main-heading">Welcome to my portfolio</h1></li>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Skills">Skills</a></li>
@@ -20,13 +20,19 @@
             </nav>
         </div>
 
-        <div>
-            <img src="url" alt="Profile pic" style="width: 300px; height: 300px;">
+        <div class="controls" style="margin:12px 0;">
+            <button id="theme-btn">Dark Mode</button>
+            <button id="info-btn">Show My Info</button>
         </div>
+
+        <div id="Home">
+            <img src="Profile.jfif" alt="Profile pic" class="profile" style="width: 300px; height: 300px;">
+        </div>
+
     <section>
         <div id="About">
             <h1>About Me</h1>
-            <p>I'm a student of HCCCI(Holy Child Central Colleges Inc.). I am willing to learn and to continue my journey as an IT student and as 3rd Year student and I'm ready for the challenges whatever it takes</p>
+            <p id="about-text">I'm a student of HCCCI(Holy Child Central Colleges Inc.). I am willing to learn and to continue my journey as an IT student and as 3rd Year student and I'm ready for the challenges whatever it takes</p>
             <ul>
                 <li>Elementary: SEES(Surallah East Elementary School)</li>
                 <li>Highschool: LINHS(Libertad National High School)</li>
@@ -71,5 +77,9 @@
         </footer>
         </div>
     </section>
+
+    <div id="personal-info" style="margin:12px 0;"></div>
+    <script src="script.js"></script>
+
     </body>
 </html>

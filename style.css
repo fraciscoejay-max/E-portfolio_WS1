@@ -16,6 +16,7 @@ body {
     flex-direction: column row;
     position: sticky;
     top: 0;
+    font-weight: bold;
 }
 
 .container h1 {
@@ -44,6 +45,14 @@ body {
 .container ul li a:hover {
     background-color: lightsalmon;
     color: rgb(175, 146, 108);
+}
+
+.profile {
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .nav {
@@ -76,5 +85,5 @@ body {
     border-style: solid;
 }
 footer {
-    background-color: rgb(175, 146, 108);
+    text-align: center;
 }
