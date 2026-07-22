@@ -1,16 +1,10 @@
-// External JS for portfolio interactions
 
-// Initialize when page loads
 window.addEventListener('load', init);
 
 function init() {
   window.alert('Welcome to my portfolio!');
   console.log('init(): page loaded');
 
-  // Change the main heading text
-  changeHeading('Welcome to my portfolio(^~^)');
-
-  // Wire up buttons
   const themeBtn = document.getElementById('theme-btn');
   const infoBtn = document.getElementById('info-btn');
   if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
@@ -19,14 +13,6 @@ function init() {
   console.log('init(): event listeners attached');
 }
 
-// Reusable function: change the main heading text
-function changeHeading(text) {
-  const h = document.getElementById('main-heading');
-  if (h) h.innerText = text;
-  console.log('changeHeading():', text);
-}
-
-// Reusable function: modify the About paragraph style
 function modifyAboutStyle(styles) {
   const el = document.getElementById('about-text');
   if (!el) return;
@@ -36,7 +22,6 @@ function modifyAboutStyle(styles) {
   console.log('modifyAboutStyle():', styles);
 }
 
-// Theme toggle implementation
 let darkMode = false;
 function toggleTheme() {
   darkMode = !darkMode;
@@ -52,7 +37,6 @@ function toggleTheme() {
   console.log('toggleTheme(): darkMode =', darkMode);
 }
 
-// Show personal info in an alert popup
 function showPersonalInfo() {
   const personalInfo = 
     'Name: Earl Jan P. Francisco\n' +
@@ -63,12 +47,10 @@ function showPersonalInfo() {
   console.log('showPersonalInfo(): alert displayed');
 }
 
-// Example debug-only function
 function debugLog(message) {
   console.log('[DEBUG]', message);
 }
 
-// Export functions for console access (optional)
 window.toggleTheme = toggleTheme;
 window.showPersonalInfo = showPersonalInfo;
 window.changeHeading = changeHeading;
